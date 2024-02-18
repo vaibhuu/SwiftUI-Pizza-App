@@ -15,26 +15,37 @@ struct ContentView: View {
     @State private var presentGrid: Bool = false
     
     var body: some View {
-        VStack {
-            HeaderView()
-                .shadow(radius: 5)
-                .environment(\.colorScheme, .light)
-            StatusBarView(showOrders: $showOrders, presentGrid: $presentGrid)
-            if showOrders
-            {
-                OrderView(orders: orders)
-                    .cornerRadius(12)
-            } else {
+        TabView {
+            
+            VStack {
+                HeaderView()
+                    .shadow(radius: 5)
+                    .environment(\.colorScheme, .light)
+                StatusBarView(showOrders: $showOrders, presentGrid: $presentGrid)
                 MenuItemView(item: $selectedItem, orders: orders)
-                        .padding(5)
-                        .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 10))
+                    .padding(5)
+                    .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 10))
                 if presentGrid {
                     MenuGridView(menu: menu, selectedItem: $selectedItem)
                 } else {
                     MenuView(menu: menu, selectedItem: $selectedItem)
                 }
+            }.tabItem {
+                Label("Menu", systemImage: "list.bullet")
             }
-            Spacer()
+            
+            VStack {
+                HeaderView()
+                    .shadow(radius: 5)
+                    .environment(\.colorScheme, .light)
+                StatusBarView(showOrders: $showOrders, presentGrid: $presentGrid)
+                //            if showOrders
+                //            {
+                OrderView(orders: orders)
+                    .cornerRadius(12)
+            } .tabItem {
+                Label("Order", systemImage: "cart")
+            }
         }
         .padding()
         .background(.linearGradient(colors: [.cyan, Color("Surf"), Color("Sky"), .white], startPoint: .topLeading, endPoint: .bottom))
