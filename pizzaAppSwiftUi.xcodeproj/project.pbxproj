@@ -11,13 +11,19 @@
 		6937FA042B76E1D50068A813 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937FA002B76E1D50068A813 /* MenuItem.swift */; };
 		6937FA052B76E1D50068A813 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937FA012B76E1D50068A813 /* OrderItem.swift */; };
 		6937FA062B76E1D50068A813 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937FA022B76E1D50068A813 /* MenuModel.swift */; };
+		6937FA082B7952290068A813 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937FA072B7952280068A813 /* StatusBarView.swift */; };
+		6937FA0A2B7980EA0068A813 /* OrderItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937FA092B7980EA0068A813 /* OrderItemView.swift */; };
+		6937FA0E2B798DC50068A813 /* MenuItemTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937FA0D2B798DC50068A813 /* MenuItemTitleView.swift */; };
+		69AFAB292B7AB514009B1565 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFAB282B7AB514009B1565 /* MenuItemView.swift */; };
+		69AFAB2B2B7B2041009B1565 /* MenuGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFAB2A2B7B2041009B1565 /* MenuGridView.swift */; };
+		69AFAB2F2B7D5A06009B1565 /* FavoriteTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFAB2E2B7D5A06009B1565 /* FavoriteTileView.swift */; };
+		69AFAB312B7F8CA8009B1565 /* OrderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFAB302B7F8CA8009B1565 /* OrderDetailView.swift */; };
 		69D0799A2B7487D500DFF3B8 /* pizzaAppSwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D079992B7487D500DFF3B8 /* pizzaAppSwiftUiApp.swift */; };
 		69D0799C2B7487D500DFF3B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D0799B2B7487D500DFF3B8 /* ContentView.swift */; };
 		69D079A12B7487D700DFF3B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D079A02B7487D700DFF3B8 /* Preview Assets.xcassets */; };
 		69D079AD2B748C2A00DFF3B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D079AC2B748C2900DFF3B8 /* Assets.xcassets */; };
 		69D079AF2B74990A00DFF3B8 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D079AE2B74990A00DFF3B8 /* OrderView.swift */; };
 		69D079B12B74991800DFF3B8 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D079B02B74991800DFF3B8 /* MenuView.swift */; };
-		69D079B32B7499B100DFF3B8 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D079B22B7499B100DFF3B8 /* MenuItemView.swift */; };
 		69D079B52B7499C300DFF3B8 /* MenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D079B42B7499C300DFF3B8 /* MenuRowView.swift */; };
 		69D079B72B7499E000DFF3B8 /* OrderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D079B62B7499E000DFF3B8 /* OrderRowView.swift */; };
 		69D079B92B749A0C00DFF3B8 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D079B82B749A0C00DFF3B8 /* HeaderView.swift */; };
@@ -29,6 +35,13 @@
 		6937FA002B76E1D50068A813 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		6937FA012B76E1D50068A813 /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		6937FA022B76E1D50068A813 /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		6937FA072B7952280068A813 /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
+		6937FA092B7980EA0068A813 /* OrderItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemView.swift; sourceTree = "<group>"; };
+		6937FA0D2B798DC50068A813 /* MenuItemTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTitleView.swift; sourceTree = "<group>"; };
+		69AFAB282B7AB514009B1565 /* MenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		69AFAB2A2B7B2041009B1565 /* MenuGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuGridView.swift; sourceTree = "<group>"; };
+		69AFAB2E2B7D5A06009B1565 /* FavoriteTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteTileView.swift; sourceTree = "<group>"; };
+		69AFAB302B7F8CA8009B1565 /* OrderDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailView.swift; sourceTree = "<group>"; };
 		69D079962B7487D400DFF3B8 /* pizzaAppSwiftUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pizzaAppSwiftUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D079992B7487D500DFF3B8 /* pizzaAppSwiftUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pizzaAppSwiftUiApp.swift; sourceTree = "<group>"; };
 		69D0799B2B7487D500DFF3B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,7 +49,6 @@
 		69D079AC2B748C2900DFF3B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69D079AE2B74990A00DFF3B8 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		69D079B02B74991800DFF3B8 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		69D079B22B7499B100DFF3B8 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
 		69D079B42B7499C300DFF3B8 /* MenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowView.swift; sourceTree = "<group>"; };
 		69D079B62B7499E000DFF3B8 /* OrderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRowView.swift; sourceTree = "<group>"; };
 		69D079B82B749A0C00DFF3B8 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -86,10 +98,16 @@
 			children = (
 				69D079992B7487D500DFF3B8 /* pizzaAppSwiftUiApp.swift */,
 				69D0799B2B7487D500DFF3B8 /* ContentView.swift */,
+				6937FA092B7980EA0068A813 /* OrderItemView.swift */,
+				6937FA072B7952280068A813 /* StatusBarView.swift */,
+				69D079BA2B74E95D00DFF3B8 /* RatingsView.swift */,
 				69D079AE2B74990A00DFF3B8 /* OrderView.swift */,
 				69D079B02B74991800DFF3B8 /* MenuView.swift */,
-				69D079B22B7499B100DFF3B8 /* MenuItemView.swift */,
-				69D079BA2B74E95D00DFF3B8 /* RatingsView.swift */,
+				69AFAB302B7F8CA8009B1565 /* OrderDetailView.swift */,
+				69AFAB282B7AB514009B1565 /* MenuItemView.swift */,
+				6937FA0D2B798DC50068A813 /* MenuItemTitleView.swift */,
+				69AFAB2E2B7D5A06009B1565 /* FavoriteTileView.swift */,
+				69AFAB2A2B7B2041009B1565 /* MenuGridView.swift */,
 				69D079B42B7499C300DFF3B8 /* MenuRowView.swift */,
 				69D079B62B7499E000DFF3B8 /* OrderRowView.swift */,
 				69D079B82B749A0C00DFF3B8 /* HeaderView.swift */,
@@ -181,15 +199,21 @@
 				69D079AF2B74990A00DFF3B8 /* OrderView.swift in Sources */,
 				69D079B12B74991800DFF3B8 /* MenuView.swift in Sources */,
 				6937FA032B76E1D50068A813 /* OrderModel.swift in Sources */,
+				6937FA0E2B798DC50068A813 /* MenuItemTitleView.swift in Sources */,
 				69D0799C2B7487D500DFF3B8 /* ContentView.swift in Sources */,
 				69D0799A2B7487D500DFF3B8 /* pizzaAppSwiftUiApp.swift in Sources */,
 				6937FA052B76E1D50068A813 /* OrderItem.swift in Sources */,
+				69AFAB292B7AB514009B1565 /* MenuItemView.swift in Sources */,
 				69D079BB2B74E95D00DFF3B8 /* RatingsView.swift in Sources */,
+				6937FA0A2B7980EA0068A813 /* OrderItemView.swift in Sources */,
 				69D079B52B7499C300DFF3B8 /* MenuRowView.swift in Sources */,
+				69AFAB2F2B7D5A06009B1565 /* FavoriteTileView.swift in Sources */,
 				69D079B72B7499E000DFF3B8 /* OrderRowView.swift in Sources */,
+				69AFAB2B2B7B2041009B1565 /* MenuGridView.swift in Sources */,
 				6937FA062B76E1D50068A813 /* MenuModel.swift in Sources */,
+				69AFAB312B7F8CA8009B1565 /* OrderDetailView.swift in Sources */,
+				6937FA082B7952290068A813 /* StatusBarView.swift in Sources */,
 				6937FA042B76E1D50068A813 /* MenuItem.swift in Sources */,
-				69D079B32B7499B100DFF3B8 /* MenuItemView.swift in Sources */,
 				69D079B92B749A0C00DFF3B8 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pizzaAppSwiftUi/Preview Content\"";
+				DEVELOPMENT_TEAM = V2DM7SAM75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -336,7 +361,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vaibhav.pizzaAppSwiftUi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishu.pizzaOrderingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -352,6 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pizzaAppSwiftUi/Preview Content\"";
+				DEVELOPMENT_TEAM = V2DM7SAM75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -364,7 +390,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vaibhav.pizzaAppSwiftUi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishu.pizzaOrderingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

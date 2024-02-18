@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct MenuView: View {
-    @Binding var selectedItem: MenuItem
     var menu:[MenuItem]
+    @Binding var selectedItem: MenuItem
     var body: some View {
         List(MenuCategory.allCases, id:\.self) { category in
             Section {
@@ -27,5 +27,5 @@ struct MenuView: View {
 }
 
 #Preview {
-    MenuView(selectedItem: .constant(testMenuItem), menu: MenuModel().menu)
+    MenuView(menu: MenuModel().menu, selectedItem: .constant(testMenuItem))
 }
