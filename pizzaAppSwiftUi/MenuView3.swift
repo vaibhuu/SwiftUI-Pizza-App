@@ -10,7 +10,7 @@ import SwiftUI
 struct MenuView3: View {
     var menu:[MenuItem]
     @State private var selectedItem:MenuItem? = nil
-    
+    @State private var selectedCategory: MenuCategory? = .originals
    
     var categoryItems:[MenuItem]{
         if selectedCategory == nil{return[]}
