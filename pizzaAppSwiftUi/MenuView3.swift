@@ -19,7 +19,21 @@ struct MenuView3: View {
     }
     
     var body: some View {
-        Text("Hello, Pizza")
+        NavigationSplitView {
+            List(MenuCategory.allCases, id: \.self, selection: $selectedCategory) { category in
+                Text(category.rawValue)
+            }
+            .navigationTitle("Pizza Category")
+        } content: {
+            List(categoryItems, selection: $selectedItem) { item in
+                NavigationLink(value: item) {
+                    MenuRowView(item: item)
+                }
+            }
+        } detail: {
+            MenuDetailView(item: $selectedItem)
+        }
+
     }
 }
 
