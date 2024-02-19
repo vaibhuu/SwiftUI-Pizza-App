@@ -22,14 +22,15 @@ struct ContentView: View {
                     .shadow(radius: 5)
                     .environment(\.colorScheme, .light)
                 StatusBarView(showOrders: $showOrders, presentGrid: $presentGrid)
-                MenuItemView(item: $selectedItem, orders: orders)
-                    .padding(5)
-                    .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 10))
-                if presentGrid {
-                    MenuGridView(menu: menu, selectedItem: $selectedItem)
-                } else {
-                    MenuView(menu: menu, selectedItem: $selectedItem)
-                }
+//                MenuItemView(item: $selectedItem, orders: orders)
+//                    .padding(5)
+//                    .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 10))
+//                if presentGrid {
+//                    MenuGridView(menu: menu, selectedItem: $selectedItem)
+//                } else {
+//                    MenuView(menu: menu, selectedItem: $selectedItem)
+//                }
+                MenuView2(menu: menu)
             }.tabItem {
                 Label("Menu", systemImage: "list.bullet")
             }
