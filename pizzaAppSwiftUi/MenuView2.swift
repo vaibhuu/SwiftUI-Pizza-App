@@ -18,7 +18,7 @@ struct MenuView2: View {
                 }
             }
         } detail : {
-         MenuDetailView(item: $selectedItem)
+            MenuDetailView(item: $selectedItem)
         }
         
     }

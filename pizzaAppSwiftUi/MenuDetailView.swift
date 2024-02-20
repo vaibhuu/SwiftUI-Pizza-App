@@ -74,7 +74,7 @@ struct MenuDetailView: View {
             HStack{
                 Picker(selection: $pizzaCrust ) {
                         ForEach(PizzaCrust.allCases,id:\.self){crust in
-                            Text(crust.rawValue).tag(crust)
+                            Text(crust.rawValue).tag(crust as PizzaCrust?)
                         }
                     } label: {
                         Text("Pizza Crust")
@@ -172,12 +172,17 @@ struct MenuDetailView: View {
             
         }
         .background(.linearGradient(colors: [.white,Color("Sky"),Color("Surf").opacity(0.3),Color("Surf")], startPoint: .topLeading, endPoint: .bottom))
+        
+        .onChange(of: item) {
+            quantity = 1
+            pizzaCrust = item?.crust
+        }
     }
     
 }
 
 struct MenuDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuDetailView(item:.constant(testMenuItem)).environmentObject(OrderModel())
+        MenuDetailView(item:.constant(testMenuItem), pizzaCrust: PizzaCrust.deepDish).environmentObject(OrderModel())
     }
 }

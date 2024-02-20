@@ -19,8 +19,10 @@ struct OrderDetailView: View {
     @State private var name:String
     @State private var comments:String
     @EnvironmentObject var orders:OrderModel
+    @State var isFromOrders: Bool
+    @State private var orderUpdate = false
     
-    init(orderItem:Binding<OrderItem>,presentSheet:Binding<Bool>,newOrder:Binding<Bool>){
+    init(orderItem:Binding<OrderItem>,presentSheet:Binding<Bool>,newOrder:Binding<Bool>, isFromOrders: Bool? = false) {
         self._orderItem = orderItem
         self.pizzaCrust = orderItem.preferredCrust.wrappedValue
         self.quantity = Int(orderItem.quantity.wrappedValue)
@@ -29,6 +31,7 @@ struct OrderDetailView: View {
         self.comments = orderItem.comments.wrappedValue
         self._presentSheet = presentSheet
         self._newOrder = newOrder
+        self.isFromOrders = isFromOrders!
     }
     
     
@@ -102,15 +105,20 @@ struct OrderDetailView: View {
                     .shadow(radius: 1)
             Spacer()
             HStack {
-                Button("Order"){
+                Button("Update"){
                     updateOrder()
                     if newOrder{
                         orders.addOrder(orderItem: orderItem)
                     } else {
                         orders.replaceOrder(id: orderItem.id, with: orderItem)
                     }
+                    orderUpdate = true
                     presentSheet = false
+
                     }
+                .alert("Order \(orderItem.name) updated",isPresented: $orderUpdate){
+                    Button("Ok"){ }
+                }
                     .padding()
                     .padding([.leading,.trailing])
                     .foregroundColor(.white)
@@ -118,20 +126,22 @@ struct OrderDetailView: View {
                     .font(.title)
                     .padding(.trailing,20)
                     .shadow(radius:7,x:2,y:2)
-                Button("Cancel"){
-                    presentSheet = false
+                if !isFromOrders {
+                    Button("Cancel"){
+                        presentSheet = false
+                    }
+                    .padding()
+                    .padding([.leading,.trailing])
+                    .foregroundColor(.white)
+                    .background(.red,in: Capsule())
+                    .font(.title)
+                    .shadow(radius:7,x:2,y:2)
                 }
-                .padding()
-                .padding([.leading,.trailing])
-                .foregroundColor(.white)
-                .background(.red,in: Capsule())
-                .font(.title)
-                .shadow(radius:7,x:2,y:2)
             }
         }
         .padding()
         .navigationTitle("Your Order")
-        .background(Color("Surf"))
+        .background(Color("Surf"), in: Rectangle())
         
     }
     
